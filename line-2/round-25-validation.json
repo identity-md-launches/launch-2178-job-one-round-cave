@@ -1,0 +1,64 @@
+{
+  "round": 25,
+  "tests": {
+    "unicode_seal": 13,
+    "unicode_replay": 14,
+    "json_citations": 16,
+    "json_lantern": 17,
+    "unicode_lantern": 12,
+    "total_passed": 72
+  },
+  "goal_unchanged": true,
+  "inherited_files_unchanged_except_append_only_used_and_current_wall_alias": 333,
+  "previous_records_unchanged": 24,
+  "media": {
+    "wall": {
+      "path": "artifacts/line-2/wall-v6.png",
+      "format": "PNG",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 2761323,
+      "sha256": "ff8b4bb7805b20c194aea3555f0b11991f07886fad9c7f216df640cd067db65d"
+    },
+    "preview": {
+      "path": "dist/line-2/25.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 90227
+    }
+  },
+  "preservation": {
+    "changed_bbox": [
+      957,
+      831,
+      1066,
+      910
+    ],
+    "changed_pixels": 4568,
+    "outside_motif_pixel_identical": true,
+    "ancestral_paintings_untouched": true
+  },
+  "visual_review": {
+    "reviewer": "local worker",
+    "pepe_retained": true,
+    "visible_hand_digit_counts": [
+      5,
+      5
+    ],
+    "new_hands": 0,
+    "letters_or_numbers_observed": false,
+    "unmet_requirements": [],
+    "limitations": [
+      "No independent visual approval.",
+      "Small yellow join and pigment texture lose detail at 512 pixels."
+    ]
+  },
+  "runtime_dependencies": "Python standard library and four unchanged sibling engine folders; no runtime install or network",
+  "new_record": "dist/line-2/25.json"
+}

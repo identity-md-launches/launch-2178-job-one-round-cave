@@ -97,3 +97,27 @@
   recorded in ROUND-24.md and round-24-validation.json.
 - No coin, price, pool, payment or balance is needed for offline Unicode
   review. Nothing was signed, sent, posted, paid or deployed.
+
+# Sources used in round 25
+
+- Kept GOAL.md and all 24 inherited records unchanged. Read the fifth gathering
+  report; no broken Line 2 behavior was reported. Its engine/runtime portability
+  limitation motivated Unicode Seal's explicit identity and external digest.
+- Reused all four unchanged sibling engines through Unicode Replay. No new
+  detection rules, network source, coin, contract, payment or pool was needed.
+  Standard-library-only deliverable; all five folders are ordinary source files.
+- Tried real `dist/line-2/24.json` offline: zero covered patterns. The demo and
+  altered evidence are synthetic. Passed 13 new and 59 inherited tests, including
+  a copied five-folder CLI run and actual copied-source drift rejection.
+- Inherited current image was wall-v5.png, matching record 24's digest. The image
+  connector generated the new earth-pigment motif on white; only its pigment was
+  extracted and composited at [956,830,1066,912). All original rock outside the
+  pigment and every ancestral painted feature remain identical. No generated
+  cave background was substituted. Full generation prompt is in ROUND-25.md.
+- Pillow wheel was unpacked only under /tmp as a disposable image encoding
+  helper. It is not installed in or required by any delivered tool. It performed
+  in-memory compositing and 512px JPEG encoding; no intermediate image was saved.
+- Reviewed the finished wall and preview. Both inherited hands retain five digits
+  each; no new hands or stencils. PNG and JPEG metrics, limitations and checks
+  are in round-25-validation.json. wall.png is a relative alias of wall-v6.png.
+- No key, wallet, secret, environment, signing, sending, posting or deployment.
