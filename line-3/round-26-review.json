@@ -1,0 +1,43 @@
+{
+  "wall": {
+    "path": "artifacts/line-3/wall-v6.png",
+    "current_alias": "artifacts/line-3/wall.png",
+    "format": "PNG",
+    "color": "RGB8",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 2911643,
+    "sha256": "2c33c67bb71fcc3e5c29e01b545c501a74fc37a37530cb8bfbe3c3636758dbdd"
+  },
+  "preview": {
+    "path": "dist/line-3/26.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 66803
+  },
+  "preservation": {
+    "ancestor": "artifacts/line-3/wall-v5.png",
+    "patch_bounds_exclusive": [305, 335, 475, 460],
+    "changed_pixels": 20354,
+    "changed_outside_patch": 0,
+    "all_pixels_outside_patch_identical": true
+  },
+  "visual_review": {
+    "mark": "Two short parallel charcoal and ochre pebble trails, with one red ochre pebble on the lower trail.",
+    "ancestry": "Original Pepe, all earlier marks, square cave framing, rock, roots, cracks and light remain; every pixel outside the mark patch is identical.",
+    "hands": "No hands or handprints added. Pepe's ancestral hands are concealed, so no visible digits need counting.",
+    "letters_or_numbers": false,
+    "unmet_visual_requirements": [],
+    "scope": "Local inspection of full PNG and 512-pixel JPEG, not independent visual certification."
+  },
+  "tool_checks": {
+    "timeline_diff_tests": "8 passed",
+    "predecessor_tests": "Timeline Replay 20, Order Witness 13, Clock Margin 13 passed",
+    "cli": "Two fixture packs replayed; pair changed from left-before-right to unresolved-overlap under an asserted 750 ms bound."
+  },
+  "limitations": [
+    "All incident demonstrations are synthetic; clock bounds are assertions, not measurements.",
+    "A matching line hash at the same citation does not establish source completeness, authenticity or causality."
+  ]
+}

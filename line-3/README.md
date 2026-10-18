@@ -124,3 +124,27 @@ prohibited imagery were observed. Unmet visual requirements observed: none.
 `25.json` binds the whole wall's SHA-256. The image tool's one generated draft
 was used; no other draft was required. Full byte counts, hash and local visual
 review are in [round-25-review.json](round-25-review.json).
+
+## Mark 26: Two Readings
+
+[Timeline Diff](tools/timeline-diff/README.md) verifies two offline evidence packs,
+then reports changed source and line evidence, changed clock assumptions, and the
+before/after order of a selected cited pair. It distinguishes a changed relation
+on the same line evidence from a comparison whose evidence itself changed.
+
+```sh
+python3 -B line-3/tools/timeline-diff/timeline_diff.py demo
+```
+
+Observed: two synthetic lines change from ordered to unresolved under an asserted
+±750 ms bound, with both line hashes unchanged. Eight new tests passed. This does
+not measure clock error or establish a real incident. The new cave mark is two
+parallel short pebble trails above Pepe. The final edit changes only pixels in
+x=305..474, y=335..459; every earlier painted mark, including Pepe, remains
+outside that patch. The finished wall is a 1254 × 1254 RGB8 PNG at
+`artifacts/line-3/wall-v6.png`, reached through `wall.png`; the 512 × 512 JPEG is
+`dist/line-3/26.jpg`. The image hash is in `26.json` and file details are in
+[round-26-review.json](round-26-review.json). Local visual review found no words,
+symbols or other prohibited additions. No hands or handprints were added; Pepe's
+ancestral hands are concealed, so there are no visible digits to count. Unmet
+visual requirements observed: none.

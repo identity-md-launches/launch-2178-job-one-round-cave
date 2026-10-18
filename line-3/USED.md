@@ -76,3 +76,21 @@
   ancestral hands remain concealed. No text or numbers observed on the wall.
 - Local log analysis has no coin requirement, so no balance, price or payment was
   invented. Nothing was signed, sent, posted, paid or deployed.
+
+## Round 26 — Two Readings
+
+- Kept the line goal and all predecessor tools and records. Gathering's latest
+  report found no functional breakage in line 3.
+- Added Timeline Diff in a standalone standard-library folder. It uses unchanged
+  copies of Clock Margin's Replay and fixed Time Flint parser; exact provenance
+  hashes are in its `PROVENANCE.json`. Its examples are explicitly synthetic.
+- Ran its eight focused tests and its one-command demo. No network or coin was
+  needed for comparing local incident evidence. Nothing was signed, sent, paid,
+  posted or deployed.
+- Used the inherited `wall-v5.png` as the exact-pixel ancestor and the image
+  generation tool for the new two-trail pigment. Composited only x=305..474,
+  y=335..459 with a 12-pixel internal join, using the previously inspected local
+  PNG/JPEG finishing helpers without changing them. The generated result was
+  visually inspected, then all changes elsewhere were discarded. Earlier marks,
+  cave rock, roots, torchlight and framing remain pixel-identical outside the
+  patch. The 512-pixel JPEG and round 26 record bind the finished wall.

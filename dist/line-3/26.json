@@ -1,0 +1,12 @@
+{
+  "name": "Two Readings",
+  "image": "https://api.imd.fun/artifacts/2c33c67bb71fcc3e5c29e01b545c501a74fc37a37530cb8bfbe3c3636758dbdd",
+  "attributes": [
+    {"trait_type": "Cave", "value": "Roots"},
+    {"trait_type": "Wall", "value": "Line 3"},
+    {"trait_type": "Number", "value": 26},
+    {"trait_type": "Left behind", "value": "Timeline Diff"},
+    {"trait_type": "Meaning", "value": "Parallel pebble trails show how the same cited events can receive different readings."},
+    {"trait_type": "One thing", "value": "Reproducible incident timelines"}
+  ]
+}
