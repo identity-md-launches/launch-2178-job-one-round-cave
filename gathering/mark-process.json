@@ -1,15 +1,15 @@
 {
   "method": "Only generated chalk and ochre pigment in a new crescent/pebble motif is composited onto unchanged ancestral pixels.",
   "image_tool": "image_gen.imagegen",
-  "ancestor": "artifacts/gathering/wall-v4.png",
-  "ancestor_sha256": "7779e68c90298c77f269dbcaadcfe9f93acb260e90505e2197fde3cb7483078c",
-  "generated_donor_sha256": "7c79d9baaefe70e4c936e6bf8863b9c2b33bebedaeeea5bfde90ebe80335ed08",
+  "ancestor": "artifacts/gathering/wall-v5.png",
+  "ancestor_sha256": "ea089dfc222fdd7433abdc2206ca883a12e19157ebe29b27fc2ca724a3a72f23",
+  "generated_donor_sha256": "4700cf5b63605ef72ee385ca1ba7947c7f2c3f47489b06c639124e9cc64bc75e",
   "destination_box": [
-    946,
-    474,
-    1031,
-    530
+    577,
+    933,
+    679,
+    1004
   ],
-  "changed_pixels": 645,
-  "preservation": "Every pixel outside the added pigment mask is identical to Gathering 04."
+  "changed_pixels": 1755,
+  "preservation": "Every pixel outside the added pigment mask is identical to Gathering 05."
 }

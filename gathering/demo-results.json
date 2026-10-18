@@ -2,6 +2,357 @@
   "checks_passed": true,
   "examples": [
     {
+      "name": "interval clock",
+      "command": [
+        "python3",
+        "-B",
+        "shared/interval-clock/interval_clock.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "comparison": {
+          "after_replay": {
+            "clock_uncertainty_ms": 501,
+            "events": 2,
+            "omitted": 0,
+            "sources": 2,
+            "verified": true
+          },
+          "before_replay": {
+            "clock_uncertainty_ms": 0,
+            "events": 2,
+            "omitted": 0,
+            "sources": 2,
+            "verified": true
+          },
+          "format": "timeline-diff/1",
+          "interpretation": "Citations are physical source and line positions. Identical line hashes bind text at those positions, not event identity after line movement. Order is temporal under each asserted clock bound, not causality or measured skew. Verified packs establish internal consistency; authentic evidence requires independently trusted digests.",
+          "line_changes": {
+            "counts": {
+              "added": 0,
+              "changed-interval": 2,
+              "changed-line": 0,
+              "reclassified": 0,
+              "removed": 0
+            },
+            "omitted_details": 0,
+            "shown": [
+              {
+                "after": {
+                  "kind": "event",
+                  "line_sha256": "6c6fccad5faaefc26c00d7ee6ae1092d98f05b574edbf2241517b5d0b6cc1331"
+                },
+                "before": {
+                  "kind": "event",
+                  "line_sha256": "6c6fccad5faaefc26c00d7ee6ae1092d98f05b574edbf2241517b5d0b6cc1331"
+                },
+                "change": "changed-interval",
+                "line": 1,
+                "source": "accepted.log"
+              },
+              {
+                "after": {
+                  "kind": "event",
+                  "line_sha256": "de779b3e4a2b6c6c6cc42072eb2c722cb0dde5205cbfc4157b2a2abcfd90b82d"
+                },
+                "before": {
+                  "kind": "event",
+                  "line_sha256": "de779b3e4a2b6c6c6cc42072eb2c722cb0dde5205cbfc4157b2a2abcfd90b82d"
+                },
+                "change": "changed-interval",
+                "line": 1,
+                "source": "completed.log"
+              }
+            ],
+            "total": 2
+          },
+          "options": {
+            "after": {
+              "clock_uncertainty_ms": 501,
+              "ignore_unmatched": false
+            },
+            "before": {
+              "clock_uncertainty_ms": 0,
+              "ignore_unmatched": false
+            },
+            "changed": true
+          },
+          "pair": {
+            "after": {
+              "left": {
+                "end_utc_exclusive": "2026-10-18T10:00:01.501000Z",
+                "line_sha256": "6c6fccad5faaefc26c00d7ee6ae1092d98f05b574edbf2241517b5d0b6cc1331",
+                "start_utc": "2026-10-18T09:59:59.499000Z",
+                "status": "event"
+              },
+              "relation": "unresolved-overlap",
+              "right": {
+                "end_utc_exclusive": "2026-10-18T10:00:03.501000Z",
+                "line_sha256": "de779b3e4a2b6c6c6cc42072eb2c722cb0dde5205cbfc4157b2a2abcfd90b82d",
+                "start_utc": "2026-10-18T10:00:01.499000Z",
+                "status": "event"
+              }
+            },
+            "assessment": "relation-changed",
+            "before": {
+              "left": {
+                "end_utc_exclusive": "2026-10-18T10:00:01Z",
+                "line_sha256": "6c6fccad5faaefc26c00d7ee6ae1092d98f05b574edbf2241517b5d0b6cc1331",
+                "start_utc": "2026-10-18T10:00:00Z",
+                "status": "event"
+              },
+              "relation": "left-before-right",
+              "right": {
+                "end_utc_exclusive": "2026-10-18T10:00:03Z",
+                "line_sha256": "de779b3e4a2b6c6c6cc42072eb2c722cb0dde5205cbfc4157b2a2abcfd90b82d",
+                "start_utc": "2026-10-18T10:00:02Z",
+                "status": "event"
+              }
+            },
+            "left_citation": {
+              "line": 1,
+              "source": "accepted.log"
+            },
+            "right_citation": {
+              "line": 1,
+              "source": "completed.log"
+            },
+            "same_line_evidence": true
+          },
+          "source_changes": []
+        },
+        "asserted_total_bound_ms": 501,
+        "verified": true
+      }
+    },
+    {
+      "name": "benchmark seal",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/benchmark-seal/benchmark_seal.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "rejected_rehashed_replacement": "seal mismatch against independently retained pin",
+        "check": {
+          "schema": "benchmark-seal-check-v1",
+          "status": "content_matches_pin",
+          "seal_sha256": "0d18499d7dcb9150785724d7121ffeafa8607ace1612900920b715c4f85b3947",
+          "plan_sha256": "13d5c3882c0082a7c603ad464645f312f6ebe6bee4622cc9f4c35710e8086f8e",
+          "assets": {
+            "cases": [
+              {
+                "id": "empty",
+                "bytes": 27,
+                "sha256": "c9e67b313441f60496f263c828e51023a55fe999c627a68a5e28ea578774c87f"
+              },
+              {
+                "id": "unicode",
+                "bytes": 29,
+                "sha256": "f1349ecdd94ff8052b60268dbbde5f7fa357e23765fe729a754af3dc31ef10f0"
+              },
+              {
+                "id": "truncated",
+                "bytes": 31,
+                "sha256": "aecbd64168e41759b407eae8205c65ff044d97a09b9574eafc3e9e466b7cadc2"
+              }
+            ],
+            "systems": [
+              {
+                "id": "synthetic-parser-v1",
+                "bytes": 48,
+                "sha256": "90665a73564fad9940461d345388b9e8cd35b655f3a9dd5509c18f1b55e7b39a"
+              },
+              {
+                "id": "synthetic-fast-v1",
+                "bytes": 46,
+                "sha256": "f34a57cb3207c11ebaf7b5f1e3d03139296cb6a76b66b1c5d2723ca6ef7022a6"
+              },
+              {
+                "id": "synthetic-careful-v1",
+                "bytes": 49,
+                "sha256": "9cbe4fc623d1cabfe6b18d00df52a7514918cdf92face52f00f36328418ba45e"
+              }
+            ]
+          },
+          "limits": [
+            "The independent pin must be retained before outcomes are collected.",
+            "Content consistency proves neither preregistration nor execution of these bytes.",
+            "Assets may contain private data; review before sharing. No redaction is performed.",
+            "Correct scoring, independence, representative cases and fixed stopping remain assertions."
+          ],
+          "observations": {
+            "schema": "frozen-benchmark-check-v1",
+            "status": "complete_observations",
+            "plan_sha256": "13d5c3882c0082a7c603ad464645f312f6ebe6bee4622cc9f4c35710e8086f8e",
+            "manifest_bytes_sha256": "ebecf5db72911452a8cbb59c5a38497db7e270ad661e47a4f939e5cd6c1f497b",
+            "observation_bytes_sha256": "3ee1c2e479379e624def23b5e5f8f960ecac7b8bd4c9c38f24154c35ce9fa691",
+            "normalized_csv_sha256": "3ee1c2e479379e624def23b5e5f8f960ecac7b8bd4c9c38f24154c35ce9fa691",
+            "case_count": 3,
+            "candidates": [
+              "synthetic-fast-v1",
+              "synthetic-careful-v1"
+            ],
+            "baseline": "synthetic-parser-v1",
+            "pass_rule": "Synthetic fixture only: output equals the case expected value exactly.",
+            "alpha": "0.05",
+            "limits": [
+              "Consistency with a pinned plan does not prove preregistration or honest execution.",
+              "Case IDs do not bind case payloads; keep the actual inputs and immutable system versions.",
+              "Independence, pass-rule application and absence of repeated looks are not verified."
+            ]
+          }
+        },
+        "normalized_csv": "case,baseline,synthetic-fast-v1,synthetic-careful-v1\nempty,1,1,1\nunicode,0,1,1\ntruncated,0,0,1\n"
+      }
+    },
+    {
+      "name": "Unicode seal",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/unicode-seal/unicode_seal.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "consistent_replacement_rejected": true,
+        "runtime_mismatch_rejected": true,
+        "verified": true,
+        "retained_findings": 2,
+        "truncated": true,
+        "finding_count": 5,
+        "assessment": "review-required"
+      }
+    },
+    {
+      "name": "timeline diff",
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/timeline-diff/timeline_diff.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "pair": {
+          "after": {
+            "left": {
+              "end_utc_exclusive": "2026-10-18T10:00:01.750000Z",
+              "line_sha256": "6c6fccad5faaefc26c00d7ee6ae1092d98f05b574edbf2241517b5d0b6cc1331",
+              "start_utc": "2026-10-18T09:59:59.250000Z",
+              "status": "event"
+            },
+            "relation": "unresolved-overlap",
+            "right": {
+              "end_utc_exclusive": "2026-10-18T10:00:03.750000Z",
+              "line_sha256": "de779b3e4a2b6c6c6cc42072eb2c722cb0dde5205cbfc4157b2a2abcfd90b82d",
+              "start_utc": "2026-10-18T10:00:01.250000Z",
+              "status": "event"
+            }
+          },
+          "assessment": "relation-changed",
+          "before": {
+            "left": {
+              "end_utc_exclusive": "2026-10-18T10:00:01Z",
+              "line_sha256": "6c6fccad5faaefc26c00d7ee6ae1092d98f05b574edbf2241517b5d0b6cc1331",
+              "start_utc": "2026-10-18T10:00:00Z",
+              "status": "event"
+            },
+            "relation": "left-before-right",
+            "right": {
+              "end_utc_exclusive": "2026-10-18T10:00:03Z",
+              "line_sha256": "de779b3e4a2b6c6c6cc42072eb2c722cb0dde5205cbfc4157b2a2abcfd90b82d",
+              "start_utc": "2026-10-18T10:00:02Z",
+              "status": "event"
+            }
+          },
+          "left_citation": {
+            "line": 1,
+            "source": "accepted.log"
+          },
+          "right_citation": {
+            "line": 1,
+            "source": "completed.log"
+          },
+          "same_line_evidence": true
+        },
+        "line_changes": {
+          "counts": {
+            "added": 0,
+            "changed-interval": 2,
+            "changed-line": 0,
+            "reclassified": 0,
+            "removed": 0
+          },
+          "omitted_details": 0,
+          "shown": [
+            {
+              "after": {
+                "kind": "event",
+                "line_sha256": "6c6fccad5faaefc26c00d7ee6ae1092d98f05b574edbf2241517b5d0b6cc1331"
+              },
+              "before": {
+                "kind": "event",
+                "line_sha256": "6c6fccad5faaefc26c00d7ee6ae1092d98f05b574edbf2241517b5d0b6cc1331"
+              },
+              "change": "changed-interval",
+              "line": 1,
+              "source": "accepted.log"
+            },
+            {
+              "after": {
+                "kind": "event",
+                "line_sha256": "de779b3e4a2b6c6c6cc42072eb2c722cb0dde5205cbfc4157b2a2abcfd90b82d"
+              },
+              "before": {
+                "kind": "event",
+                "line_sha256": "de779b3e4a2b6c6c6cc42072eb2c722cb0dde5205cbfc4157b2a2abcfd90b82d"
+              },
+              "change": "changed-interval",
+              "line": 1,
+              "source": "completed.log"
+            }
+          ],
+          "total": 2
+        }
+      }
+    },
+    {
+      "name": "interval arithmetic",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/interval-flint/interval_flint.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "lower": "3.6",
+        "upper": "5.5",
+        "within": {
+          "lower": "3 s",
+          "upper": "6 s",
+          "fully_within": true,
+          "overlaps": true
+        },
+        "unit": "s"
+      }
+    },
+    {
       "name": "shared clock receipt",
       "command": [
         "python3",

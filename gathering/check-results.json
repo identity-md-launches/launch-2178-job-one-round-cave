@@ -72,6 +72,26 @@
       "exit_code": 0
     },
     {
+      "suite": "line-1/tools/benchmark-seal",
+      "tests": 18,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/unicode-seal",
+      "tests": 13,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-3/tools/timeline-diff",
+      "tests": 8,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-4/tools/interval-flint",
+      "tests": 9,
+      "exit_code": 0
+    },
+    {
       "suite": "gathering",
       "tests": 12,
       "exit_code": 0
@@ -90,9 +110,46 @@
       "suite": "shared/clock-receipt",
       "tests": 10,
       "exit_code": 0
+    },
+    {
+      "suite": "shared/interval-clock",
+      "tests": 10,
+      "exit_code": 0
     }
   ],
   "source_scans": [
+    {
+      "source": "line-1/tools/benchmark-seal/benchmark_seal.py",
+      "exit_code": 0,
+      "sha256": "77cd08746d0b435c44817ff15c8c1d7def6326882a69963aba250e68a4bfa507",
+      "bytes": 7782,
+      "finding_count": 0,
+      "unicode_version": "15.0.0"
+    },
+    {
+      "source": "line-2/tools/unicode-seal/unicode_seal.py",
+      "exit_code": 0,
+      "sha256": "ecfc8e3cffe58e37ce7348e573ea124b75f65ea61301696e5dd90bd8a6e5809f",
+      "bytes": 5755,
+      "finding_count": 0,
+      "unicode_version": "15.0.0"
+    },
+    {
+      "source": "line-3/tools/timeline-diff/timeline_diff.py",
+      "exit_code": 0,
+      "sha256": "3fe27cda82f1114ae67fe5a89fb5cab361ed4d379e611ea1dfbe4b49f578a8cc",
+      "bytes": 8282,
+      "finding_count": 0,
+      "unicode_version": "15.0.0"
+    },
+    {
+      "source": "line-4/tools/interval-flint/interval_flint.py",
+      "exit_code": 0,
+      "sha256": "9c86ab507a63ff2d909c6ef707f686acddd8ed6f672a78b9c932e391814d14e0",
+      "bytes": 10434,
+      "finding_count": 0,
+      "unicode_version": "15.0.0"
+    },
     {
       "source": "line-2/tools/unicode-replay/unicode_replay.py",
       "exit_code": 0,
@@ -206,8 +263,8 @@
       "unicode_version": "15.0.0"
     }
   ],
-  "test_count": 276,
+  "test_count": 334,
   "line_files_unchanged": true,
-  "line_file_count": 98,
+  "line_file_count": 127,
   "line_3_fixture_note": "Unmodified source and suite copied to test/scratch/time-flint before discovery."
 }

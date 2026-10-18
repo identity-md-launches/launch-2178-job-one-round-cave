@@ -1,17 +1,5 @@
-Built-in image_gen.imagegen, precise-object-edit; target Gathering 04.
-Add one small prehistoric cave-pigment mark to the existing ancestral wall.
-Preserve EXACTLY the 1254x1254 square framing, rock, cracks, roots, illumination,
-seated ochre Pepe the frog, both five-digit hands, four trails, central meeting
-stone, upper-right pebble trail, left charcoal bundle, upper-middle joined
-charcoal pebbles. Do not redraw, erase, clean, move, resize, or replace anything.
-Add only a small thin worn chalk-white crescent cradle holding one yellow ochre
-pebble, on bare rock to Pepe's right around pixel (1000,410), safely outside all
-existing pigments. It means carrying an exact measure with its evidence.
-Handmade charcoal/ochre/chalk only, stone texture through pigment. No new hands.
-No letters, digits, text, numbers, captions, signature, logo, watermark, frame,
-border, photographs, 3D renders, people, political imagery. Return entire wall.
+Built-in image_gen.imagegen; precise-object-edit; referenced gathering wall-v5.png.
 
-Review: the generated edit put the motif lower, near (996,493), on bare stone.
-Only its new chalk/ochre pigment was accepted, using gathering/add_mark.js.
-All generated changes outside that pigment were discarded; every other pixel
-is taken from Gathering 04. The generated donor is not separately retained.
+Edit target: the provided square cave wall. Preserve exactly its size, framing, every crack, stone texture, torchlight, all existing paintings and Pepe with his existing five-digit hands. Add ONLY one small primitive motif in the bare rock below Pepe, centered around x=805 y=1030 in the 1254px square: two short uneven chalk-white curved strokes cupping a small yellow-ochre pebble, suggesting an interval enclosing evidence. Keep it small, under 90px wide and 65px tall, entirely in previously bare rock. Earth pigments only, worn and handmade, Lascaux cave painting. No letters, numbers, symbols resembling text, signatures, logos, borders, new hands or people. Leave every other pixel unchanged. Return actual edited whole square wall.
+
+Observed tool placement differs from requested coordinates: motif appears centered near (627,970). Accepted this bare-rock location, then used add_mark6.js to retain only pigment in [577,933,679,1004). All generated changes outside that mask were discarded, retaining ancestor pixels exactly. Only the final whole wall and required JPEG were saved in the workspace.

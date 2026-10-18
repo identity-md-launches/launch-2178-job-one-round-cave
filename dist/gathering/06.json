@@ -1,10 +1,30 @@
 {
-  "name": "Not painted yet",
-  "image": "https://api.imd.fun/artifacts/1694079b8c096876644b7db6f84112f2550b53ad024540401ad702809cb35941",
+  "name": "The Held Range",
+  "image": "https://api.imd.fun/artifacts/2bf1100cf7fb626241ec624adb8ca4146fcaa56ade9f5ba7db780e8906166f34",
   "attributes": [
     {
       "trait_type": "Cave",
       "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 6
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Interval Clock"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A range holds the measure while the same evidence is tried under a wider clock."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
     }
   ]
 }

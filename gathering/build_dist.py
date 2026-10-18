@@ -46,7 +46,7 @@ def main():
              for n in range(1, 5)]
     (DIST / "goals.json").write_text(json.dumps(goals, ensure_ascii=True, indent=2)+"\n", encoding="utf-8")
     sections = []
-    tools = ["Paired Verdict + Candidate Ladder + Paired Power + Frozen Benchmark", "Unicode Lantern + JSON Lantern + JSON Citations + Unicode Replay", "Time Flint + Timeline Replay + Order Witness + Clock Margin", "Unit Flint + Calculation Receipt"]
+    tools = ["Paired Verdict + Candidate Ladder + Paired Power + Frozen Benchmark + Benchmark Seal", "Unicode Lantern + JSON Lantern + JSON Citations + Unicode Replay + Unicode Seal", "Time Flint + Timeline Replay + Order Witness + Clock Margin + Timeline Diff", "Unit Flint + Calculation Receipt + Interval Flint"]
     for folder, title, goal in [("gathering", "Gathering", "Four crafts meet. Evidence is checked, shared, and carried onward.")]+[
             (f'line-{g["line"]}', f'Line {g["line"]} / {tools[g["line"]-1]}', g["goal"]) for g in goals]:
         paths = sorted((DIST / folder).glob("[0-9][0-9].json"), reverse=True)
@@ -91,10 +91,10 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer
 <p>Compare evidence. Reveal hidden text. Order events. Check a measure.</p>
 <a href="goals.json">Read the four goals</a> · <a href="one.json">One / record 736</a></div>
 <a href="__FULL__"><img width="512" height="512" src="__HERO__" alt="__MEANING__"></a></div>
-<aside class="status" aria-label="Fifth gathering checks"><p class="eyebrow">A useful thing carried between lines</p>
-<p><strong>Clock Receipt</strong> joins Line 4’s exact calculation receipts to Line 3’s portable timeline and clock margins. Another worker can recompute the asserted bound, confirm that it matches the timeline, and test the boundary where definite event order becomes unresolved.</p>
-<p><code>python3 -B shared/clock-receipt/clock_receipt.py demo</code></p>
-<small>Run from the repository root. Offline, standard library only. Line suites: 209 passed. Shared integrations: 55 passed. Additional line checks: 12 passed. Twenty-seven CLI checks passed. The synthetic demo binds 750 ms, replays order at 500 ms and overlap at 501 ms, and rejects a different valid bound receipt. Source hashes bind bytes, not authorship. Clock bounds are assumptions. Replay establishes consistency; authenticity needs an independently trusted digest. No new coin is needed.</small></aside>
+<aside class="status" aria-label="Sixth gathering checks"><p class="eyebrow">A useful thing carried between lines</p>
+<p><strong>Interval Clock</strong> joins Line 4’s exact interval enclosures to Line 3’s timeline comparison. Another worker can calculate an asserted range, round its upper endpoint conservatively to milliseconds, and compare the same evidence under both clock assumptions.</p>
+<p><code>python3 -B shared/interval-clock/interval_clock.py demo</code></p>
+<small>Run from the repository root. Offline, standard library only. Line suites: 257 passed. Shared integrations: 65 passed. Additional line checks: 12 passed. Thirty-two CLI checks passed. The synthetic demo encloses [300,500.1] ms, rounds upward to 501 ms, and shows order becoming unresolved while the evidence bytes stay identical. Source hashes bind bytes, not authorship. Clock bounds are assumptions. Replay establishes consistency; authenticity needs an independently trusted digest. No new coin is needed.</small></aside>
 __SECTIONS__</main><footer><p>Every numbered record appears under its wall, with painted work and future slots each in descending order. Preview images are local JPEGs; select a painting to open its full PNG artifact. This page needs no scripts, fonts or external stylesheets.</p>
 <p>ZTO first, IMD second whenever work needs a coin. These four offline tools need neither. Test results describe checks performed; they are not a certification of safety.</p></footer></body></html>
 '''

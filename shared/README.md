@@ -45,3 +45,18 @@ See its README for coordinate domains, byte verification and remaining limits.
 to Line 3's replayed clock-margin evidence. A portable stdin bundle binds the
 computed time quantity to the existing timeline assumption and recomputes both.
 Run `python3 -B shared/clock-receipt/clock_receipt.py demo` for the offline example.
+
+## Sixth gathering: Interval Clock
+
+[Interval Clock](interval-clock/README.md) connects Line 4's exact interval
+enclosures to Line 3's Timeline Diff. An asserted range becomes a conservatively
+rounded total clock bound, then the same embedded logs replay under both models.
+
+```sh
+python3 -B shared/interval-clock/interval_clock.py demo
+```
+
+Observed synthetic enclosure `[300,500.1] ms` rounds to 501 ms; the cited pair
+loses definite order without changing a line of evidence. Ten integration tests
+pass. Clock ranges remain analyst assertions, not measurements or causality.
+Copy the folder for standalone offline use; provenance pins unchanged snapshots.

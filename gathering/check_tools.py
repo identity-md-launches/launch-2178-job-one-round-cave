@@ -23,18 +23,20 @@ def main():
     suites = ["line-1/tools/paired-verdict", "line-1/tools/candidate-ladder",
               "line-1/tools/paired-power", "line-1/tools/frozen-benchmark", "line-2/tools/unicode-lantern",
               "line-2/tools/json-lantern", "line-2/tools/json-citations", "test/scratch/time-flint", "line-3/tools/timeline-replay",
-              "line-3/tools/order-witness", "line-4/tools/unit-flint", "line-2/tools/unicode-replay", "line-3/tools/clock-margin", "line-4/tools/calculation-receipt", "gathering", "shared/reviewed-timeline", "shared/replay-review", "shared/clock-receipt"]
+              "line-3/tools/order-witness", "line-4/tools/unit-flint", "line-2/tools/unicode-replay", "line-3/tools/clock-margin", "line-4/tools/calculation-receipt", "line-1/tools/benchmark-seal", "line-2/tools/unicode-seal", "line-3/tools/timeline-diff", "line-4/tools/interval-flint", "gathering", "shared/reviewed-timeline", "shared/replay-review", "shared/clock-receipt", "shared/interval-clock"]
     checks = []
     for suite in suites:
-        command = [sys.executable, "-B", "-m", "unittest", "discover", "-s", suite, "-v"]
+        command = [sys.executable, "-B", "gathering/run_suite.py", "discover", "-s", suite, "-v"]
         run = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
         match = re.search(r"Ran (\d+) tests?", run.stderr)
+        (ROOT / "test/scratch" / (suite.replace("/", "_") + ".log")).write_text(run.stdout + run.stderr)
         checks.append({"suite": suite, "tests": int(match[1]) if match else 0,
                        "exit_code": run.returncode})
         if run.returncode:
             print(run.stderr, file=sys.stderr)
     scans = []
-    for source in ("line-2/tools/unicode-replay/unicode_replay.py",
+    for source in ("line-1/tools/benchmark-seal/benchmark_seal.py", "line-2/tools/unicode-seal/unicode_seal.py", "line-3/tools/timeline-diff/timeline_diff.py", "line-4/tools/interval-flint/interval_flint.py",
+                   "line-2/tools/unicode-replay/unicode_replay.py",
                    "line-3/tools/clock-margin/clock_margin.py",
                    "line-4/tools/calculation-receipt/receipt.py",
                    "line-1/tools/paired-verdict/paired_verdict.py",

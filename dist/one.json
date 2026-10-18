@@ -1,6 +1,6 @@
 {
   "name": "One",
-  "image": "https://api.imd.fun/artifacts/ea089dfc222fdd7433abdc2206ca883a12e19157ebe29b27fc2ca724a3a72f23",
+  "image": "https://api.imd.fun/artifacts/2bf1100cf7fb626241ec624adb8ca4146fcaa56ade9f5ba7db780e8906166f34",
   "attributes": [
     {
       "trait_type": "Cave",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Meaning",
-      "value": "An exact measure travels in its cradle with the evidence it helps interpret."
+      "value": "A range holds the measure while the same evidence is tried under a wider clock."
     }
   ]
 }

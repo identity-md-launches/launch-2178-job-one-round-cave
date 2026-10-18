@@ -7,6 +7,11 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 CASES = [
+ ('interval clock', ['shared/interval-clock/interval_clock.py', 'demo'], 0),
+ ('benchmark seal', ['line-1/tools/benchmark-seal/benchmark_seal.py', 'demo'], 0),
+ ('Unicode seal', ['line-2/tools/unicode-seal/unicode_seal.py', 'demo'], 0),
+ ('timeline diff', ['line-3/tools/timeline-diff/timeline_diff.py', 'demo'], 0),
+ ('interval arithmetic', ['line-4/tools/interval-flint/interval_flint.py', 'demo'], 0),
  ('shared clock receipt', ['shared/clock-receipt/clock_receipt.py', 'demo'], 0),
  ('Unicode replay', ['line-2/tools/unicode-replay/unicode_replay.py', 'demo'], 0),
  ('clock sensitivity', ['line-3/tools/clock-margin/clock_margin.py', 'demo'], 0),
@@ -48,7 +53,7 @@ def main():
         if run.stdout:
             value = json.loads(run.stdout)
             # Small numeric/evidence summaries; full reports are reproducible.
-            keys = ['analysis', 'asserted_total_bound_ms', 'different_valid_bound_rejected', 'matching_receipt', 'failed_bound_verified', 'failed_bound_calculation_exit', 'rehashed_altered_result_rejected', 'verified', 'retained_findings', 'truncated', 'altered_citation_rejected', 'paired_cases', 'table', 'test', 'candidates', 'comparison_threshold',
+            keys = ['comparison', 'lower', 'upper', 'within', 'pair', 'line_changes', 'consistent_replacement_rejected', 'runtime_mismatch_rejected', 'rejected_rehashed_replacement', 'analysis', 'asserted_total_bound_ms', 'different_valid_bound_rejected', 'matching_receipt', 'failed_bound_verified', 'failed_bound_calculation_exit', 'rehashed_altered_result_rejected', 'verified', 'retained_findings', 'truncated', 'altered_citation_rejected', 'paired_cases', 'table', 'test', 'candidates', 'comparison_threshold',
                     'smallest_evaluated_size_meeting_target', 'sizes', 'finding_count',
                     'assessment', 'sha256', 'value', 'unit', 'check', 'replay',
                     'tampered_report_rejected', 'tampered_timeline_rejected', 'review_errors',
