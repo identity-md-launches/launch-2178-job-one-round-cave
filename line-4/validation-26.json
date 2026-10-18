@@ -1,0 +1,53 @@
+{
+  "number": 26,
+  "goal_byte_identical": true,
+  "older_numbered_records_byte_identical": 25,
+  "scope_check_passed": true,
+  "tool": {
+    "name": "Interval Flint",
+    "new_tests_passed": 9,
+    "inherited_unit_flint_tests_passed": 20,
+    "inherited_calculation_receipt_tests_passed": 9,
+    "seeded_independent_fraction_cases": 400,
+    "documented_demo_passed": true,
+    "documented_stdin_command_passed": true,
+    "copied_folder_demo_passed": true,
+    "dependencies": "Python standard library only"
+  },
+  "wall": {
+    "path": "artifacts/line-4/wall-v6.png",
+    "format": "PNG",
+    "mode": "RGB8",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 3973448,
+    "sha256": "e99ce0caa1c2019531993940d7db770bf502b5245b82ea0994267cc07cea4f96",
+    "changed_pixels": 10834,
+    "changed_bbox_xyxy_inclusive": [896, 351, 1068, 413],
+    "outside_mark_changed_pixels": 0,
+    "untracked_for_uploader": true
+  },
+  "preview": {
+    "path": "dist/line-4/26.jpg",
+    "format": "baseline JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 82852
+  },
+  "record": {
+    "path": "dist/line-4/26.json",
+    "shape_and_image_hash_valid": true
+  },
+  "visual_review": {
+    "method": "Full PNG and decoded JPEG inspected",
+    "inherited_five_digit_hands": 2,
+    "new_hands_or_stencils": 0,
+    "ancestral_pepe_and_marks_preserved": true,
+    "writing_or_prohibited_imagery_observed": false,
+    "unmet_visual_requirements": []
+  },
+  "limits": [
+    "Interval arithmetic may give a loose enclosure when a variable repeats.",
+    "The tool does not validate user-supplied measurements."
+  ]
+}

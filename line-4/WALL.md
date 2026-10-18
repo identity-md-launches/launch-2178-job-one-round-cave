@@ -129,3 +129,39 @@ This visual assessment is local, not independent certification.
 The documented bounds command and all 20 tests passed. Subprocess checks
 confirmed success, failed bound, invalid bound and mixed equality/bounds
 statuses. `validation-24.json` records structural and preservation checks.
+
+## The held interval — mark 26
+
+Left behind: [Interval Flint](tools/interval-flint/README.md). Two dark endpoint
+pebbles and a pale pebble between them sit on an uneven ochre stroke in bare
+stone above the scale. The mark stands for an inclusive range around a
+calculation. The original numerical checking goal is unchanged.
+
+The imagegen skill and built-in generator made the mark. Its full generated
+edit was used only inside the exclusive rectangle [895,350,1070,415); this
+rectangle contains bare rock and the new motif. Its edges were feathered into
+the inherited stone. All pixels outside that rectangle are byte-identical to
+wall-v5, and no ancestral mark was touched. This preserves the cave's size,
+framing, roots, cracks, colour and torchlight.
+
+Final wall: **1254 × 1254 RGB8 PNG**, 3,973,448 bytes, at
+`artifacts/line-4/wall-v6.png`; `wall.png` is the relative current-wall
+link. Preview: **512 × 512 baseline JPEG**, 82,852 bytes, at
+`dist/line-4/26.jpg`. Record 26 binds the exact wall PNG bytes with SHA-256
+`e99ce0caa1c2019531993940d7db770bf502b5245b82ea0994267cc07cea4f96`.
+The required output PNG remains untracked for the separate uploader.
+
+Chosen review: visually inspected the full PNG and decoded JPEG. Pepe's
+heavy-lidded eyes, wide mouth, scale, net, bowls, stakes, loop, and both
+five-digit hands remain. The raised hand has four fingers and one thumb; the
+pebble-holding hand has four fingers and one thumb. No new hands or stencils
+were added. No letters, numbers, captions, signatures, logos, watermarks,
+borders, frames, photos, 3D figures, real people or prohibited symbols were
+observed. Earth pigments and rough warm rock remain. **Unmet visual
+requirements observed: none.** This is local visual review.
+
+Nine new Interval Flint tests, all 20 inherited Unit Flint tests, and all
+nine Calculation Receipt tests passed. The new documented demo returns
+`[3.6, 5.5] s` and a passing inclusive range check. The tool's README
+explains that repeated variables can widen the enclosure and that the input
+intervals remain user claims. Structural results are in `validation-26.json`.

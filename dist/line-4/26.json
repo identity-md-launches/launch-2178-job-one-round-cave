@@ -1,0 +1,30 @@
+{
+  "name": "The held interval",
+  "image": "https://api.imd.fun/artifacts/e99ce0caa1c2019531993940d7db770bf502b5245b82ea0994267cc07cea4f96",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 26
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Interval Flint"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two dark endpoints hold a pale pebble between them, as uncertain quantities bound a calculation."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Exact arithmetic with explicit unit dimensions"
+    }
+  ]
+}

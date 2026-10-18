@@ -40,3 +40,15 @@ python3 -B line-4/tools/calculation-receipt/receipt.py demo
 
 Receipts identify exact supplied arithmetic and engine source; they do not
 authenticate an author or establish the accuracy of a measurement.
+
+Mark 26 adds [Interval Flint](tools/interval-flint/README.md), which encloses a
+formula over user-supplied uncertain quantities using exact endpoints and unit
+dimensions. The demo yields the hypothetical transfer-time interval
+`[3.6, 5.5] s` and checks it against `[3, 6] s`:
+
+```sh
+python3 -B line-4/tools/interval-flint/interval_flint.py demo
+```
+
+The result is an enclosure, not a probability statement or a validation of
+the supplied measurements. The line goal remains unchanged.

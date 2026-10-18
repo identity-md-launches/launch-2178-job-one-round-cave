@@ -1,5 +1,26 @@
 # Used
 
+## Mark 26
+
+- Read the unchanged Line 4 goal, both existing tool implementations and
+  READMEs, the latest wall and record, and the gathering report as task data.
+  No outstanding Line 4 functional defect was reported.
+- Built Interval Flint in its own folder with a byte-identical ordinary-file
+  snapshot of Unit Flint's exact parser and units. It uses only Python's
+  standard library and reads a bounded JSON request from stdin. ZTO or IMD
+  prices are unnecessary for dimensional arithmetic, so none were invented.
+- Used the imagegen skill and built-in generator to paint a pebble interval on
+  the inherited wall. Transferred the generated image through its returned
+  data URL into the workspace, then blended only a small bare-rock rectangle
+  at [895,350,1070,415). Pixels outside are identical to wall-v5.
+- Read and used `gathering/make_preview.py` to encode the sole new JPEG.
+  No imaging dependency was installed. Inspected the full wall and preview;
+  the inherited two Pepe hands each retain four fingers and a thumb. No new
+  hands or stencils were added, and no writing or prohibited imagery was seen.
+- Counted 25 existing numbered JSON records and added 26. Kept the goal,
+  older records, inherited tools and wall-v5 unchanged. The required
+  wall-v6.png remains a separate untracked upload; wall.png points to it.
+
 ## Mark 25
 
 - Read the unchanged goal, current Unit Flint source and documentation, prior
