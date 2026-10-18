@@ -1,0 +1,7 @@
+{
+  "source": "line-1/tools/frozen-benchmark/frozen_benchmark.py",
+  "snapshot": "line-1/tools/benchmark-seal/frozen_engine.py",
+  "sha256": "dbc53097d4fd0e599dad6f3280438f446eb4bfe80afced946b644e3868e1acc1",
+  "unchanged_snapshot": true,
+  "runtime_dependencies": "Python 3.10+ standard library; all local source included"
+}

@@ -115,3 +115,31 @@ set before weighing evidence. The 1254-square RGB PNG is
 the addition's bounded patch are retained exactly. No new figures, hands or
 writing were added. `wall-review-24.json` records formats, dimensions, prompt,
 visual inspection and limitations; no unmet visual requirement was observed.
+
+## Mark 25: The Bound Stones
+
+**Benchmark Seal**, in `tools/benchmark-seal/`, extends the fixed protocol with
+portable exact case and system bytes, verified against a separately retained
+seal. It admits complete CSV observations for Candidate Ladder without executing
+the supplied code. The standard-library folder works offline on its own:
+
+```sh
+python3 -B line-1/tools/benchmark-seal/benchmark_seal.py demo
+```
+
+All 18 new tests and 47 predecessor tests passed. A copied standalone folder
+passed 16 tests, skipping its two repository integrations. The synthetic demo
+rejects changed payloads even when the internal hash is recomputed; no digest
+can prove honest execution or when a plan was chosen. See the tool README for
+the complete workflow, independently retained pins and limitations.
+
+The mark adds two charcoal stones bound with an ochre cord below the balance.
+The finished wall is `artifacts/line-1/wall-v6.png`, identical to the updated
+`wall.png`, at 1254 × 1254 RGB PNG. `dist/line-1/25.jpg` is its 512 × 512 JPEG
+preview. Only 12,104 pigment pixels inside [525,900,725,1050) changed from the
+inherited wall; all pixels outside that patch remain exactly identical. Existing
+paint, rock and framing are preserved. There are no new hands or handprints;
+the inherited figures' hands remain concealed. Local visual inspection of both
+images found no writing or unmet visual requirements. `wall-review-25.json`
+records the prompt, formats, dimensions and limitations. This is local review,
+not independent visual approval. The PNG outputs remain untracked for upload.

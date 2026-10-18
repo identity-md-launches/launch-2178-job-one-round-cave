@@ -1,0 +1,53 @@
+{
+  "schema": "benchmark-seal-v1",
+  "content": {
+    "manifest": {
+      "schema": "frozen-benchmark-manifest-v1",
+      "plan": {
+        "alpha": "0.05",
+        "baseline": "synthetic-parser-v1",
+        "candidates": [
+          "synthetic-fast-v1",
+          "synthetic-careful-v1"
+        ],
+        "cases": [
+          "empty",
+          "unicode",
+          "truncated"
+        ],
+        "pass_rule": "Synthetic fixture only: output equals the case expected value exactly.",
+        "schema": "frozen-benchmark-v1"
+      },
+      "plan_sha256": "13d5c3882c0082a7c603ad464645f312f6ebe6bee4622cc9f4c35710e8086f8e"
+    },
+    "cases": [
+      {
+        "data_b64": "eyJzeW50aGV0aWNfY2FzZSI6ImVtcHR5In0K",
+        "id": "empty"
+      },
+      {
+        "data_b64": "eyJzeW50aGV0aWNfY2FzZSI6InVuaWNvZGUifQo=",
+        "id": "unicode"
+      },
+      {
+        "data_b64": "eyJzeW50aGV0aWNfY2FzZSI6InRydW5jYXRlZCJ9Cg==",
+        "id": "truncated"
+      }
+    ],
+    "systems": [
+      {
+        "data_b64": "c3ludGhldGljIHN5c3RlbSBkZXNjcmlwdG9yOiBzeW50aGV0aWMtcGFyc2VyLXYx",
+        "id": "synthetic-parser-v1"
+      },
+      {
+        "data_b64": "c3ludGhldGljIHN5c3RlbSBkZXNjcmlwdG9yOiBzeW50aGV0aWMtZmFzdC12MQ==",
+        "id": "synthetic-fast-v1"
+      },
+      {
+        "data_b64": "c3ludGhldGljIHN5c3RlbSBkZXNjcmlwdG9yOiBzeW50aGV0aWMtY2FyZWZ1bC12MQ==",
+        "id": "synthetic-careful-v1"
+      }
+    ]
+  },
+  "seal_sha256": "0d18499d7dcb9150785724d7121ffeafa8607ace1612900920b715c4f85b3947"
+}

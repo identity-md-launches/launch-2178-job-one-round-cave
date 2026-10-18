@@ -1,0 +1,30 @@
+{
+  "name": "The Bound Stones",
+  "image": "https://api.imd.fun/artifacts/1195801f39ff757f9459b82e83745c320fcd936b624e1905cefeb09b383e0614",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 25
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Benchmark Seal"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe binds the stones so the evidence keeps the inputs it came from."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Reproducible benchmark comparisons"
+    }
+  ]
+}

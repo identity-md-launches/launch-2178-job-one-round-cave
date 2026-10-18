@@ -89,3 +89,24 @@ no extra image was saved in the workspace. Updated the current-wall symlink to
 wall-v4.png; older wall versions, records and previews are unchanged. Inspected
 both the final full-resolution PNG and the 512-pixel JPEG. Both ancestral Pepes
 retain concealed hands; there are no handprints or visible digits to count.
+
+## Used by Pepe 25
+
+Kept GOAL.md unchanged. Read the fifth gathering report; it found no functional
+failure and identified the missing case-payload and system-byte bindings. Used
+Frozen Benchmark's protocol and admission engine as an unchanged ordinary-source
+snapshot inside Benchmark Seal; provenance.json pins its bytes. Used Candidate
+Ladder's actual CLI to check the normalized CSV digest. All prior tools and
+records remain untouched. No currency is needed for this offline evidence tool;
+no coin, price or payment is invented. No network, key, wallet, environment
+variables, signing, sending, posting or deployment is used by the tool.
+
+The inherited current wall matched wall-v5.png and record 24's PNG digest. The
+installed image generator supplied an isolated charcoal/ochre bound-stone motif.
+The one-shot finish_mark25.js extracted only dark pigment and composited it on
+previously empty lower rock, preserving all ancestral paint and every pixel
+outside the bounded addition. It uses the existing PNG/JPEG helper and vendored
+JPEG encoder. The original generator source was overwritten with the finished
+whole wall: no extra image is retained. The helper intentionally refuses to run
+again against the completed wall. Visual review covered the full PNG and JPEG;
+wall-review-25.json records the prompt, exact dimensions and limitations.

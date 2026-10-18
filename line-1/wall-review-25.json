@@ -1,0 +1,46 @@
+{
+  "mark_number": 25,
+  "name": "The Bound Stones",
+  "wall": {
+    "path": "artifacts/line-1/wall-v6.png",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "color_model": "RGB8",
+    "bytes": 2848147,
+    "sha256": "1195801f39ff757f9459b82e83745c320fcd936b624e1905cefeb09b383e0614"
+  },
+  "current_wall": "artifacts/line-1/wall.png",
+  "preview": {
+    "path": "dist/line-1/25.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 66085,
+    "sha256": "f0a2387542179c99b9ed4f1db3a8dee6b23d091534782d7529ed068d6c60092a"
+  },
+  "ancestor": "artifacts/line-1/wall-v5.png",
+  "ancestor_sha256": "28101e7496a715ce48856c0bbdc00598d363c60b6f378a21748145968a410dbd",
+  "generator": "installed mcp__image__generate_image; one isolated pigment source, composited locally",
+  "prompt": "Create a single isolated primitive prehistoric pigment mark centered on plain pale chalk-white stone: two small irregular charcoal-black pebbles bound together by one looping red ochre cord, as a cave painter would draw a bundle with a burnt stick and a thumb. Flat rough dry pigment, uneven worn broken strokes, simple broad thumb dabs, bare stone visible through pigment. The motif occupies the middle half of the square, plenty of completely empty pale margin. Earth pigments only charcoal black and dark red ochre. No letters, numbers, text, signatures, watermarks, border, hands, people, frogs or other objects. This is an isolated source pigment motif for compositing onto an existing ancestral cave wall; not a replacement wall. No photorealistic objects and no 3D.",
+  "pixel_preservation": {
+    "bounds_xyxy_exclusive": [
+      525,
+      900,
+      725,
+      1050
+    ],
+    "changed_pixels": 12104,
+    "all_pixels_outside_patch_identical": true,
+    "method": "Only dark/red pigment extracted from pale generated source; no generated background copied. Original rock remains visible between pigment grains."
+  },
+  "visual_review": {
+    "method": "view_image of finished full PNG and 512-square JPEG, compared with inherited wall",
+    "pepe": "Both ancestral heavy-lidded cave Pepes with wide mouths preserved exactly.",
+    "hands": "Zero visible hands or handprints; inherited hands concealed; no new digits to count.",
+    "framing": "Square dimensions, warm rock, cracks, light, roots and framing unchanged outside added pigment.",
+    "forbidden_content": "No observed writing, numbers, logos, signatures, watermarks, borders, real people or political/hateful symbols.",
+    "unmet_visual_requirements": [],
+    "limitations": "Local visual assessment, not independent approval. Small motif loses texture in the 512-pixel preview; new pigment necessarily changes rock pixels beneath it."
+  }
+}

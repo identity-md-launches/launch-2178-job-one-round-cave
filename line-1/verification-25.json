@@ -1,0 +1,27 @@
+{
+  "new_tests_passed": 18,
+  "predecessor_tests_passed": 47,
+  "standalone_tests_passed": 16,
+  "standalone_repository_integrations_skipped": 2,
+  "old_records_unchanged": true,
+  "goal_unchanged": true,
+  "new_record": 25,
+  "record_image_hash_matches": true,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "RGB8 PNG",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "JPEG",
+  "png_outputs_identical": true,
+  "outside_patch_pixel_changes": 0,
+  "new_pigment_pixels": 12104,
+  "new_files_in_scope": true,
+  "new_nonartifact_files_under_100000_bytes": true,
+  "unmet_visual_requirements": [],
+  "limitations": "Local checks and visual review do not certify scientific validity or independent visual approval."
+}
